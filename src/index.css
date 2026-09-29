@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FAF7EF;
+    color: #242824;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Tabular figures for exact numeric and price alignment */
+.price-num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Smooth horizontal scrollbar hiding for filter pills on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
