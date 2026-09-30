@@ -33,8 +33,8 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="sticky top-0 left-0 right-0 z-50 bg-[#FAF7EF] border-b border-[#E8E2D2] shadow-sm">
-      {/* Announcement Bar */}
-      <div className="bg-[#173F2A] text-[#FAF7EF] h-9 px-4 flex items-center justify-center overflow-hidden">
+      {/* Announcement Bar - Hidden on mobile for clean header layout */}
+      <div className="hidden sm:flex bg-[#173F2A] text-[#FAF7EF] h-9 px-4 items-center justify-center overflow-hidden">
         <p className="text-[11px] font-medium tracking-wider uppercase truncate text-center">
           {siteConfig.shipping.announcementText} • WHATSAPP: {siteConfig.contact.whatsappDisplay}
         </p>
