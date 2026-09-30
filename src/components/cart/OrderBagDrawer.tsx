@@ -158,7 +158,7 @@ export const OrderBagDrawer: React.FC<OrderBagDrawerProps> = ({
                           type="tel"
                           value={customer.phone}
                           onChange={(e) => setCustomer({ ...customer, phone: e.target.value })}
-                          placeholder="e.g. 9876543210"
+                          placeholder="e.g. 9345518760"
                           className="w-full px-2.5 py-1.5 rounded border border-brand-border focus:outline-none focus:border-brand-primary"
                         />
                       </div>

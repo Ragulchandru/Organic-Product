@@ -8,9 +8,9 @@ export const siteConfig: SiteConfig = {
     faviconUrl: "/favicon.ico",
   },
   contact: {
-    phone: "9876543210",
-    whatsappNumber: "9876543210",
-    whatsappDisplay: "9876543210",
+    phone: "9345518760",
+    whatsappNumber: "9345518760",
+    whatsappDisplay: "9345518760",
     email: "",
     address: "",
     city: "",

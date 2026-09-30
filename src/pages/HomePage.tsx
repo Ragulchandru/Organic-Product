@@ -7,6 +7,7 @@ import { ProductGrid } from '../components/product/ProductGrid';
 import { DeliverySection } from '../components/common/DeliverySection';
 import { products } from '../data/products';
 import { Product, ProductVariant } from '../types';
+import { filterProductsByQuery } from '../lib/utils';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 
@@ -14,18 +15,20 @@ interface HomePageProps {
   onAddToCart: (product: Product, variant: ProductVariant, quantity: number) => void;
   onProductClick: (product: Product) => void;
   onNavigateCatalog: (category?: string) => void;
+  searchQuery?: string;
+  onSearchChange?: (query: string) => void;
 }
 
 export const HomePage: React.FC<HomePageProps> = ({
   onAddToCart,
   onProductClick,
   onNavigateCatalog,
+  searchQuery = '',
+  onSearchChange,
 }) => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
-  const filteredProducts = selectedCategory === 'all'
-    ? products
-    : products.filter((p) => p.category === selectedCategory);
+  const filteredProducts = filterProductsByQuery(products, selectedCategory, searchQuery);
 
   const handleCategorySelectFromHome = (cat: string) => {
     setSelectedCategory(cat);

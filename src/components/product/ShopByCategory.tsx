@@ -18,7 +18,7 @@ export const ShopByCategory: React.FC<ShopByCategoryProps> = ({ onSelectCategory
   ];
 
   return (
-    <section className="w-full py-12 px-4 sm:px-6 lg:px-8 bg-[#FAF7EF] border-b border-[#E8E2D2]">
+    <section className="hidden lg:block w-full py-12 px-4 sm:px-6 lg:px-8 bg-[#FAF7EF] border-b border-[#E8E2D2]">
       <div className="max-w-[1320px] mx-auto flex flex-col gap-8">
         
         {/* Header */}

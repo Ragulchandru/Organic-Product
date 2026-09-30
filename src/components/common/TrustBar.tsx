@@ -30,7 +30,7 @@ export const TrustBar: React.FC = () => {
   ];
 
   return (
-    <section className="w-full bg-[#f6f3eb] py-6 px-4 sm:px-6 lg:px-8 border-b border-[#E8E2D2]">
+    <section className="hidden lg:block w-full bg-[#f6f3eb] py-6 px-4 sm:px-6 lg:px-8 border-b border-[#E8E2D2]">
       <div className="max-w-[1320px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
         {trustPoints.map((item, index) => {
           const Icon = item.icon;

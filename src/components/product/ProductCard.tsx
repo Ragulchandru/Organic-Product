@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { ShoppingBag, MessageSquare, Check } from 'lucide-react';
+import { ShoppingBag, Check } from 'lucide-react';
 import { Product, ProductVariant } from '../../types';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
 import { formatPrice } from '../../lib/utils';
-import { siteConfig } from '../../config/siteConfig';
 
 interface ProductCardProps {
   product: Product;
@@ -29,13 +28,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     onAddToCart(product, selectedVariant, 1);
     setAddedAnimation(true);
     setTimeout(() => setAddedAnimation(false), 1500);
-  };
-
-  const handleWhatsAppQuickOrder = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    const message = `Hello ${siteConfig.brand.name},\n\nI want to quickly order:\nProduct: *${product.name}*\nPack: ${selectedVariant.weight} (${selectedVariant.packaging})\nPrice: ₹${selectedVariant.price}\n\nPlease confirm availability and shipping details.`;
-    const targetUrl = `https://wa.me/${siteConfig.contact.whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.open(targetUrl, '_blank');
   };
 
   return (
@@ -124,8 +116,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             </span>
           </div>
 
-          {/* Action Buttons: Add to Bag + WhatsApp Quick Order */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5" onClick={(e) => e.stopPropagation()}>
+          {/* Action Button: Add to Bag */}
+          <div onClick={(e) => e.stopPropagation()}>
             <Button
               variant="primary"
               size="sm"
@@ -143,16 +135,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                   <span className="truncate">Add to Bag</span>
                 </>
               )}
-            </Button>
-
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={handleWhatsAppQuickOrder}
-              className="w-full text-xs h-9 px-2 hover:border-brand-whatsapp hover:text-brand-whatsapp"
-            >
-              <MessageSquare className="w-3.5 h-3.5 mr-1 text-brand-whatsapp shrink-0" />
-              <span className="truncate">WhatsApp</span>
             </Button>
           </div>
 

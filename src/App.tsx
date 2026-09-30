@@ -13,6 +13,7 @@ export function App() {
   const [activeTab, setActiveTab] = useState<'home' | 'catalog' | 'delivery'>('home');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [searchQuery, setSearchQuery] = useState<string>('');
   
   const {
     cart,
@@ -31,6 +32,13 @@ export function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleSearchChange = (query: string) => {
+    setSearchQuery(query);
+    if (query.trim() && activeTab !== 'catalog') {
+      setActiveTab('catalog');
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF7EF] text-[#242824] font-sans antialiased">
       {/* Navigation Header */}
@@ -41,6 +49,8 @@ export function App() {
         activeTab={activeTab}
         setActiveTab={(tab) => setActiveTab(tab as any)}
         onSelectCategory={handleNavigateCatalog}
+        searchQuery={searchQuery}
+        onSearchChange={handleSearchChange}
       />
 
       {/* Main View Router */}
@@ -50,6 +60,8 @@ export function App() {
             onAddToCart={addToCart}
             onProductClick={setSelectedProduct}
             onNavigateCatalog={handleNavigateCatalog}
+            searchQuery={searchQuery}
+            onSearchChange={handleSearchChange}
           />
         )}
 
@@ -58,6 +70,8 @@ export function App() {
             onAddToCart={addToCart}
             onProductClick={setSelectedProduct}
             initialCategory={selectedCategory}
+            searchQuery={searchQuery}
+            onSearchChange={handleSearchChange}
           />
         )}
 
