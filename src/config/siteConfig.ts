@@ -18,7 +18,7 @@ export const siteConfig: SiteConfig = {
     pincode: "",
   },
   social: {
-    instagram: "https://instagram.com/vaishu__organics",
+    instagram: "https://www.instagram.com/explore/search/keyword/?q=%23organicproducts",
     facebook: "",
   },
   theme: {
