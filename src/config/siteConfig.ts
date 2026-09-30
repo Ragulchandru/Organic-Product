@@ -10,7 +10,7 @@ export const siteConfig: SiteConfig = {
   contact: {
     phone: "9876543210",
     whatsappNumber: "9876543210",
-    whatsappDisplay: "+91 98765 43210",
+    whatsappDisplay: "9876543210",
     email: "",
     address: "",
     city: "",

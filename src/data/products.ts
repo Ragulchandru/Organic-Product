@@ -33,7 +33,7 @@ export const products: Product[] = [
     badge: 'Wood-Pressed (Marachekku)',
     shortDescription: 'Single-origin native peanuts churned slowly in Vaagai wood press. Unrefined.',
     description: 'Extracted slowly from groundnuts using wooden cold presses. Suitable for everyday sautéing and traditional frying.',
-    imageUrl: '/assets/wood_pressed_oils.jpg',
+    imageUrl: '/assets/groundnut_oil.jpg',
     secondaryImageUrl: '/assets/wood_pressed_oils.jpg',
     variants: [
       { id: 'go-1L', weight: '1 Litre', packaging: 'Bottle', price: 339, inStock: true },
@@ -74,7 +74,8 @@ export const products: Product[] = [
     badge: 'Traditional Grain',
     shortDescription: 'Fine-grained traditional raw rice popular for daily meals.',
     description: 'Aathur Kichadi Samba is a fine traditional rice variety from Tamil Nadu with a soft texture and pleasant aroma after cooking.',
-    imageUrl: '/assets/thooyamalli_rice.jpg',
+    imageUrl: '/assets/aathur_kichadi.jpg',
+    secondaryImageUrl: '/assets/thooyamalli_rice.jpg',
     variants: [
       { id: 'aks-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 85, inStock: true },
       { id: 'aks-10kg', weight: '10 KG', packaging: 'Traditional Bag', price: 800, inStock: true },
@@ -95,7 +96,8 @@ export const products: Product[] = [
     badge: 'Traditional Strain',
     shortDescription: 'Robust native red rice strain valued for traditional preparations.',
     description: 'Sivan Samba is an authentic red rice grain cultivated using traditional farming practices in Tamil Nadu.',
-    imageUrl: '/assets/karuppu_kavuni.jpg',
+    imageUrl: '/assets/sivan_samba.jpg',
+    secondaryImageUrl: '/assets/kattuyanam_samba.jpg',
     variants: [
       { id: 'ss-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 90, inStock: true },
       { id: 'ss-10kg', weight: '10 KG', packaging: 'Traditional Bag', price: 860, inStock: true },
@@ -116,7 +118,8 @@ export const products: Product[] = [
     badge: 'Traditional Grain',
     shortDescription: 'Golden-hued traditional rice variety with a soft cooked texture.',
     description: 'Thanga Samba is a native rice strain known for its pale golden bran and pleasant taste.',
-    imageUrl: '/assets/thooyamalli_rice.jpg',
+    imageUrl: '/assets/thanga_samba.jpg',
+    secondaryImageUrl: '/assets/aathur_kichadi.jpg',
     variants: [
       { id: 'ths-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 95, inStock: true },
       { id: 'ths-10kg', weight: '10 KG', packaging: 'Traditional Bag', price: 880, inStock: true },
@@ -137,7 +140,8 @@ export const products: Product[] = [
     badge: 'Traditional Strain',
     shortDescription: 'Traditional tall-crop coarse red rice with hearty grain body.',
     description: 'Kattuyanam Samba is a historic coarse red rice variety grown in South India, excellent for porridge and traditional tiffin batter.',
-    imageUrl: '/assets/karuppu_kavuni.jpg',
+    imageUrl: '/assets/kattuyanam_samba.jpg',
+    secondaryImageUrl: '/assets/red_samba_rice.jpg',
     variants: [
       { id: 'kys-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 95, inStock: true },
       { id: 'kys-10kg', weight: '10 KG', packaging: 'Traditional Bag', price: 900, inStock: true },
@@ -158,7 +162,8 @@ export const products: Product[] = [
     badge: 'Aromatic Grain',
     shortDescription: 'Tiny aromatic rice grains traditional for South Indian Biryani.',
     description: 'Seeraga Samba is a famous small aromatic rice variety named for its resemblance to cumin seeds (Seeragam). Renowned for imparting authentic flavor to biryani and pulao.',
-    imageUrl: '/assets/thooyamalli_rice.jpg',
+    imageUrl: '/assets/seeraga_samba.jpg',
+    secondaryImageUrl: '/assets/thooyamalli_rice.jpg',
     variants: [
       { id: 'srs-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 90, inStock: true },
       { id: 'srs-10kg', weight: '10 KG', packaging: 'Traditional Bag', price: 850, inStock: true },
@@ -179,7 +184,8 @@ export const products: Product[] = [
     badge: 'Hand-Pounded',
     shortDescription: 'Traditional hand-pounded unpolished rice with intact bran layer.',
     description: 'Kaikuthal Arisi is hand-pounded rice prepared using traditional de-husking techniques that preserve natural bran layer color and texture.',
-    imageUrl: '/assets/karuppu_kavuni.jpg',
+    imageUrl: '/assets/kaikuthal_arisi.jpg',
+    secondaryImageUrl: '/assets/kattuyanam_samba.jpg',
     variants: [
       { id: 'ka-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 85, inStock: true },
       { id: 'ka-10kg', weight: '10 KG', packaging: 'Traditional Bag', price: 800, inStock: true },
@@ -200,7 +206,8 @@ export const products: Product[] = [
     badge: 'Daily Grain',
     shortDescription: 'Premium white Ponni rice suitable for everyday cooking.',
     description: 'Vellai Ponni is a popular South Indian white rice grain preferred for daily lunches, curries, and variety rice items.',
-    imageUrl: '/assets/thooyamalli_rice.jpg',
+    imageUrl: '/assets/vellai_ponni.jpg',
+    secondaryImageUrl: '/assets/aathur_kichadi.jpg',
     variants: [
       { id: 'vp-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 85, inStock: true },
       { id: 'vp-10kg', weight: '10 KG', packaging: 'Traditional Bag', price: 800, inStock: true },
@@ -221,7 +228,8 @@ export const products: Product[] = [
     badge: 'Tiffin Rice',
     shortDescription: 'Parboiled short-grain rice ideal for fluffy Idlis and crispy Dosas.',
     description: 'Ponmani Idli Arisi is a specialized short-grain parboiled rice variety ideal for grinding smooth batter for soft idlis and golden dosas.',
-    imageUrl: '/assets/thooyamalli_rice.jpg',
+    imageUrl: '/assets/ponmani_idli.jpg',
+    secondaryImageUrl: '/assets/thooyamalli_rice.jpg',
     variants: [
       { id: 'pi-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 65, inStock: true },
       { id: 'pi-10kg', weight: '10 KG', packaging: 'Traditional Bag', price: 600, inStock: true },
@@ -242,7 +250,8 @@ export const products: Product[] = [
     badge: 'Rare Grain',
     shortDescription: 'Rare traditional grain harvested from flowering bamboo shoots.',
     description: 'Moongil Arisi is a rare wild grain collected when bamboo plants flower. It has a chewy texture similar to wheat berries, suitable for payasam and specialty rice preparations.',
-    imageUrl: '/assets/native_millets.jpg',
+    imageUrl: '/assets/bamboo_rice.jpg',
+    secondaryImageUrl: '/assets/hero_pantry.jpg',
     variants: [
       { id: 'ma-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 580, inStock: true },
     ],
@@ -261,7 +270,8 @@ export const products: Product[] = [
     badge: 'Traditional Strain',
     shortDescription: 'Traditional dark red rice strain valued in native South Indian agriculture.',
     description: 'Karunguruvai Samba is a dark red heirloom rice variety cultivated traditionally in Tamil Nadu for Kanji and tiffin batter.',
-    imageUrl: '/assets/karuppu_kavuni.jpg',
+    imageUrl: '/assets/karunguruvai_samba.jpg',
+    secondaryImageUrl: '/assets/red_samba_rice.jpg',
     variants: [
       { id: 'kgs-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 135, inStock: true },
       { id: 'kgs-10kg', weight: '10 KG', packaging: 'Traditional Bag', price: 1250, inStock: true },
@@ -282,7 +292,8 @@ export const products: Product[] = [
     badge: 'Broken Grain',
     shortDescription: 'Broken Karuppu Kavuni black rice ideal for quick porridge.',
     description: 'Broken Karuppu Kavuni grains that cook quickly into smooth porridge, kanji, or payasam.',
-    imageUrl: '/assets/karuppu_kavuni.jpg',
+    imageUrl: '/assets/karuppu_kavuni_kurunai.jpg',
+    secondaryImageUrl: '/assets/hero_pantry.jpg',
     variants: [
       { id: 'kkk-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 90, inStock: true },
       { id: 'kkk-10kg', weight: '10 KG', packaging: 'Traditional Bag', price: 850, inStock: true },
@@ -304,7 +315,8 @@ export const products: Product[] = [
     badge: 'Native Millet',
     shortDescription: 'Unpolished native Kodo millet grains.',
     description: 'Varagu (Kodo Millet) is a traditional small grain harvested in South India. Ideal for preparing upma, kichadi, and variety rice.',
-    imageUrl: '/assets/native_millets.jpg',
+    imageUrl: '/assets/varagu_millet.jpg',
+    secondaryImageUrl: '/assets/ragi_millet.jpg',
     variants: [
       { id: 'var-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 110, inStock: true },
     ],
@@ -323,7 +335,8 @@ export const products: Product[] = [
     badge: 'Native Millet',
     shortDescription: 'Unpolished little millet grains for easy everyday cooking.',
     description: 'Samai (Little Millet) is a lightweight small grain suitable for replacing rice in daily meals, Pongal, and Upma.',
-    imageUrl: '/assets/native_millets.jpg',
+    imageUrl: '/assets/samai_millet.jpg',
+    secondaryImageUrl: '/assets/ragi_millet.jpg',
     variants: [
       { id: 'sam-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 150, inStock: true },
     ],
@@ -342,7 +355,8 @@ export const products: Product[] = [
     badge: 'Native Millet',
     shortDescription: 'Golden foxtail millet grains traditional to Tamil Nadu.',
     description: 'Thinai (Foxtail Millet) is an ancient small grain traditionally paired with honey or cooked into sweet and savory dishes.',
-    imageUrl: '/assets/native_millets.jpg',
+    imageUrl: '/assets/thinai_millet.jpg',
+    secondaryImageUrl: '/assets/ragi_millet.jpg',
     variants: [
       { id: 'thi-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 110, inStock: true },
     ],
@@ -361,7 +375,8 @@ export const products: Product[] = [
     badge: 'Native Millet',
     shortDescription: 'Unpolished barnyard millet grains.',
     description: 'Kuthiraivali (Barnyard Millet) is a light, fast-cooking small grain ideal for Upma, Kichadi, and Dosa batter.',
-    imageUrl: '/assets/native_millets.jpg',
+    imageUrl: '/assets/kuthiraivali_millet.jpg',
+    secondaryImageUrl: '/assets/ragi_millet.jpg',
     variants: [
       { id: 'kut-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 150, inStock: true },
     ],
@@ -380,7 +395,8 @@ export const products: Product[] = [
     badge: 'Native Grain',
     shortDescription: 'Traditional pearl millet grains for Kambu Koozh and Roti.',
     description: 'Kambu (Pearl Millet) is a traditional South Indian grain popular for preparing refreshing Kambu Koozh (porridge), flatbreads, and dosa.',
-    imageUrl: '/assets/native_millets.jpg',
+    imageUrl: '/assets/kambu_millet.jpg',
+    secondaryImageUrl: '/assets/ragi_millet.jpg',
     variants: [
       { id: 'kam-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 60, inStock: true },
     ],
@@ -399,7 +415,8 @@ export const products: Product[] = [
     badge: 'Native Grain',
     shortDescription: 'Whole finger millet (Ragi) grains.',
     description: 'Kelvaragu (Ragi / Finger Millet) is a staple South Indian grain used for making Ragi Kali, porridge, and rotis.',
-    imageUrl: '/assets/native_millets.jpg',
+    imageUrl: '/assets/ragi_millet.jpg',
+    secondaryImageUrl: '/assets/native_millets.jpg',
     variants: [
       { id: 'kel-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 70, inStock: true },
     ],
@@ -418,7 +435,8 @@ export const products: Product[] = [
     badge: 'Natural Sweetener',
     shortDescription: 'Unrefined traditional sugarcane jaggery powder.',
     description: 'Naatu Sarkarai is traditional unrefined jaggery powder made from sugarcane juice, perfect for sweetening tea, coffee, and traditional desserts.',
-    imageUrl: '/assets/hero_pantry.jpg',
+    imageUrl: '/assets/jaggery_powder.jpg',
+    secondaryImageUrl: '/assets/hero_pantry.jpg',
     variants: [
       { id: 'ns-1kg', weight: '1 KG', packaging: 'Eco Pack', price: 80, inStock: true },
     ],
@@ -438,7 +456,8 @@ export const products: Product[] = [
     badge: 'Wood-Pressed',
     shortDescription: 'Cold-extracted unrefined sesame oil.',
     description: 'Pure cold-extracted sesame oil pressed using traditional wooden Chekku presses without artificial heat processing.',
-    imageUrl: '/assets/wood_pressed_oils.jpg',
+    imageUrl: '/assets/sesame_oil.jpg',
+    secondaryImageUrl: '/assets/wood_pressed_oils.jpg',
     variants: [
       { id: 'so-1L', weight: '1 Litre', packaging: 'Bottle', price: 389, inStock: true },
     ],
@@ -456,7 +475,8 @@ export const products: Product[] = [
     badge: 'Wood-Pressed',
     shortDescription: 'Pure aromatic cold-pressed coconut oil.',
     description: 'Cold-extracted coconut oil made from dried coconut copra using traditional wooden presses.',
-    imageUrl: '/assets/wood_pressed_oils.jpg',
+    imageUrl: '/assets/coconut_oil.jpg',
+    secondaryImageUrl: '/assets/wood_pressed_oils.jpg',
     variants: [
       { id: 'co-1L', weight: '1 Litre', packaging: 'Bottle', price: 429, inStock: true },
     ],
@@ -474,7 +494,8 @@ export const products: Product[] = [
     badge: 'Traditional Ghee',
     shortDescription: 'Pure traditional country cow butter ghee.',
     description: 'Aromatic traditional ghee prepared from pure country cow butter, ideal for drizzling on rice, sweet dishes, and tiffin.',
-    imageUrl: '/assets/wood_pressed_oils.jpg',
+    imageUrl: '/assets/cow_ghee.jpg',
+    secondaryImageUrl: '/assets/wood_pressed_oils.jpg',
     variants: [
       { id: 'ccg-1L', weight: '1 Litre', packaging: 'Jar', price: 799, inStock: true },
     ],
